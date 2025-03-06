@@ -70,7 +70,8 @@
         
         <h3>Highlights</h3>
         <div class="image">
+            <img src="basketball.jpg" alt="Basketball Highlights">
         </div>
-  
+    </div> <!-- Closed missing content div -->
 </body>
 </html>
