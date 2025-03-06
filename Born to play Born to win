@@ -69,9 +69,10 @@
         <p>Basketball accessories like shoes, headbands, wristbands, knee and elbow pads, compression sleeves, mouthguards, ankle braces, finger tape, and sports goggles enhance player safety, comfort, and performance on the court.</p>
         
         <h3>Highlights</h3>
-        <div class="image">
-            <img src="basketball.jpg" alt="Basketball Highlights">
-        </div>
-    </div> <!-- Closed missing content div -->
+    <div class="image">
+        <img src="basketball.jpg" alt="Basketball Highlights">
+    </div>
+</div> <!-- Closed missing content div -->
+  
 </body>
 </html>
