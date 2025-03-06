@@ -35,25 +35,16 @@
             font-size: 1em;
         }
 
-        nav button.active {
-            background-color: #ddd;
-            font-weight: bold;
-        }
-
         .container {
             padding: 20px;
         }
 
-        .section {
-            display: none;
-        }
-
-        .section.active {
-            display: block;
-        }
-
         h2 {
             margin-top: 0;
+        }
+
+        .rules, .tips, .accessories {
+            margin-bottom: 20px;
         }
 
         .highlights img {
@@ -64,6 +55,13 @@
         .highlight-text {
             text-align: center;
             font-weight: bold;
+        }
+
+        .basketball-icon {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png') no-repeat center/contain;
         }
     </style>
 </head>
@@ -77,93 +75,52 @@
             <div class="type-of-sports">
                 <h3 style="text-align: center;">Type of sports</h3>
                 <nav>
-                    <button id="btn-basketball" class="active">Basketball</button>
-                    <button id="btn-badminton">Badminton</button>
-                    <button id="btn-chess">Chess</button>
+                    <button>Basketball</button>
+                    <button>Badminton</button>
+                    <button>Chess</button>
                 </nav>
             </div>
 
-            <!-- Basketball Section -->
-            <div id="basketball" class="section active">
+            <div>
                 <h2>Basketball</h2>
                 <p>
                     Basketball is a team sport where two teams of five aim to score by shooting a ball through a 10-foot-high hoop.
                     Players move the ball by dribbling or passing and score with field goals (worth two or three points) or free throws
                     (one point). The team with the most points wins. It's a fast-paced game requiring agility, teamwork, and precision.
                 </p>
-            </div>
-
-            <!-- Badminton Section -->
-            <div id="badminton" class="section">
-                <h2>Badminton</h2>
-                <p>
-                    Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. It can be played in singles
-                    (one player per side) or doubles (two players per side). The aim is to hit the shuttlecock so that it lands in the
-                    opponent's half of the court.
-                </p>
-            </div>
-
-            <!-- Chess Section -->
-            <div id="chess" class="section">
-                <h2>Chess</h2>
-                <p>
-                    Chess is a two-player strategy board game played on an 8x8 grid. The objective is to checkmate the opponent's king
-                    by putting it in a position where it cannot escape capture. Each player starts with 16 pieces, including a king,
-                    queen, rooks, bishops, knights, and pawns.
-                </p>
                 <div class="rules">
                     <h3>Rules of the game</h3>
                     <p>
-                        Players take turns moving their pieces. Each piece moves in a specific way: pawns move forward, knights jump in
-                        an L-shape, bishops move diagonally, rooks move horizontally or vertically, and the queen moves in all directions.
-                        The game ends when a king is checkmated.
+                        In basketball, two teams of five players each try to score by shooting a ball into the opposing team's hoop.
+                        Players move the ball by dribbling or passing, and a team has 24 seconds to attempt a shot. Field goals are worth
+                        two or three points, and free throws are worth one. Physical contact is limited, and fouls lead to free throws or
+                        loss of possession.
                     </p>
                 </div>
 
                 <div class="tips">
                     <h3>Tips</h3>
                     <p>
-                        To improve in chess, learn basic tactics (pins, forks, skewers), control the center of the board, develop your
-                        pieces early, avoid unnecessary moves, and practice endgame strategies. Study famous games to build a deeper
-                        understanding.
+                        To excel in basketball, master dribbling and shooting form, stay low on defense, improve court vision, use fakes,
+                        rebound aggressively, build stamina, communicate well, be smart with fouls, and practice consistently.
+                    </p>
+                </div>
+
+                <div class="accessories">
+                    <h3>Accessories</h3>
+                    <p>
+                        Basketball accessories like shoes, headbands, wristbands, knee and elbow pads, compression sleeves, mouthguards,
+                        ankle braces, finger tape, and sports goggles enhance player safety, comfort, and performance on the court.
                     </p>
                 </div>
 
                 <div class="highlights">
                     <h3>Highlights</h3>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/ChessSet.jpg" alt="Chess Board">
-                    <p class="highlight-text">Top Chess Strategies and Games</p>
+                    <img src="https://i.ytimg.com/vi/4l_3E9AJNY8/maxresdefault.jpg" alt="Kobe Highlights">
+                    <p class="highlight-text">48 MINUTES OF KOBE HIGHLIGHTS</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <script>
-        // JavaScript to toggle between sections
-        const buttons = {
-            basketball: document.getElementById('btn-basketball'),
-            badminton: document.getElementById('btn-badminton'),
-chess: document.getElementById('btn-chess')
-        };
-
-        const sections = {
-            basketball: document.getElementById('basketball'),
-            badminton: document.getElementById('badminton'),
-            chess: document.getElementById('chess')
-        };
-
-        function showSection(selected) {
-            for (let key in sections) {
-                sections[key].classList.remove('active');
-                buttons[key].classList.remove('active');
-            }
-            sections[selected].classList.add('active');
-            buttons[selected].classList.add('active');
-        }
-
-        buttons.basketball.addEventListener('click', () => showSection('basketball'));
-        buttons.badminton.addEventListener('click', () => showSection('badminton'));
-        buttons.chess.addEventListener('click', () => showSection('chess'));
-    </script>
 </body>
 </html>
