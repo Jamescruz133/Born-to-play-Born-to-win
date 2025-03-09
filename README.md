@@ -1,1 +1,14 @@
-title: type of sports
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.sports-buttons button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
