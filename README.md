@@ -1,14 +1,10 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
-.sports-buttons button {
-    padding: 10px 15px;
-    margin: 5px;
-    cursor: pointer;
-}
-
-.hidden {
-    display: none;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Kumokonekta sa CSS file -->
+</head>
+<body>
+    <header>
