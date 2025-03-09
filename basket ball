@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .navbar button {
+            padding: 10px 20px;
+            border: none;
+            background: #ccc;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: left;
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .content {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .image {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .image img {
+            width: 250px;
+        }
+    </style>
+    <script>
+        function showContent(sport) {
+            const sections = document.querySelectorAll('.sport-section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sport).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="header">Born to Play, Born to Win</div>
+    <div class="navbar">
+        <button onclick="showContent('basketball')">Basketball</button>
+        <button onclick="showContent('badminton')">Badminton</button>
+        <button onclick="showContent('chess')">Chess</button>
+    </div>
+    
+    <div class="container">
+        <div id="basketball" class="sport-section">
+            <div class="section-title">Basketball</div>
+            <div class="content">Basketball is a team sport where two teams of five aim to score by shooting a ball through a 10-foot-high hoop...</div>
+        </div>
+        
+        <div id="badminton" class="sport-section" style="display: none;">
+            <div class="section-title">Badminton</div>
+            <div class="content">Badminton is a racket sport played using a shuttlecock, with players attempting to hit it over a net...</div>
+        </div>
+        
+        <div id="chess" class="sport-section" style="display: none;">
+            <div class="section-title">Chess</div>
+            <div class="content">Chess is a strategic board game played between two players, aiming to checkmate the opponent's king...</div>
+        </div>
+    </div>
+</body>
+</html>
