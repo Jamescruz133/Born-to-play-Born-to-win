@@ -10,7 +10,6 @@
     <header>
         <h1>Born to Play, Born to Win</h1>
     </header>
-
     <nav>
         <h2>Type of Sports</h2>
         <div class="sports-buttons">
