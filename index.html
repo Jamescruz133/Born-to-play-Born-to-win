@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   Sports Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <script>
+   function showContent(sport) {
+            document.getElementById('basketball-content').style.display = 'none';
+            document.getElementById('badminton-content').style.display = 'none';
+            document.getElementById('chess-content').style.display = 'none';
+
+            document.getElementById(sport + '-content').style.display = 'block';
+        }
+  </script>
+ </head>
+ <body class="bg-white text-black font-sans">
+  <div class="container mx-auto p-4">
+   <div class="text-center mb-4">
+    <h1 class="text-xl font-bold">
+     Born to Play, Born to Win
+    </h1>
+    <div class="mt-2">
+     <input class="border border-gray-400 p-1" placeholder="Enter search" type="text"/>
+    </div>
+   </div>
+   <div class="text-center mb-4">
+    <button class="bg-gray-200 text-black py-2 px-4 border border-gray-400">
+     Type of sports
+    </button>
+   </div>
+   <div class="flex justify-center space-x-4 mb-4">
+    <button class="bg-gray-200 text-black py-2 px-4 border border-gray-400" onclick="showContent('basketball')">
+     Basketball
+    </button>
+    <button class="bg-gray-200 text-black py-2 px-4 border border-gray-400" onclick="showContent('badminton')">
+     Badminton
+    </button>
+    <button class="bg-gray-200 text-black py-2 px-4 border border-gray-400" onclick="showContent('chess')">
+     Chess
+    </button>
+   </div>
+   <div id="basketball-content">
+    <div class="text-left mb-4">
+     <h2 class="text-2xl font-bold">
+      Basketball
+     </h2>
+     <p>
+      Basketball is a team sport where two teams of five aim to score by shooting a ball through a 10-foot-high hoop. Players move the ball by dribbling or passing and score with field goals (worth two or three points) or free throws (one point). The team with the most points wins. It's a fast-paced game requiring agility, teamwork, and precision.
+     </p>
+    </div>
+    <div class="flex flex-col md:flex-row">
+     <div class="md:w-2/3">
+      <h3 class="text-xl font-bold">
+       rules of the game
+      </h3>
+      <p>
+       In basketball, two teams of five players each try to score by shooting a ball into the opposing team's hoop. Players move the ball by dribbling or passing, and a team has 24 seconds to attempt a shot. Field goals are worth two or three points, and free throws are worth one. Physical contact is limited, and fouls lead to free throws or loss of possession. The team with the most points at the end wins.
+      </p>
+      <h3 class="text-xl font-bold mt-4">
+       Tips
+      </h3>
+      <p>
+       To excel in basketball, master dribbling and shooting form, stay low on defense, improve court vision, use fakes, rebound aggressively, build stamina, communicate well, be smart with fouls, and practice consistently.
+      </p>
+      <h3 class="text-xl font-bold mt-4">
+       Accessories
+      </h3>
+      <p>
+       Basketball accessories like shoes, headbands, wristbands, knee and elbow pads, compression sleeves, mouthguards, ankle braces, finger tape, and sports goggles enhance player safety, comfort, and performance on the court.
+      </p>
+     </div>
+     <div class="md:w-1/3 md:pl-4 mt-4 md:mt-0">
+      <h3 class="text-xl font-bold">
+       Highlights
+      </h3>
+      <img alt="Basketball player in action" class="mt-2" height="200" src="https://storage.googleapis.com/a1aa/image/Ey-TKQmDW0mQBglaDwGMlT8XO1gUX-_Pt2-0MxgLLKU.jpg" width="300"/>
+      <p class="mt-2">
+       48 MINUTES OF KOBE HIGHLIGHTS
+      </p>
+     </div>
+    </div>
+   </div>
+   <div id="badminton-content" style="display: none;">
+    <div class="text-left mb-4">
+     <h2 class="text-2xl font-bold">
+      Badminton
+     </h2>
+     <p>
+      Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. It can be played as a singles or doubles game. The objective is to score points by landing the shuttlecock in the opponent's half of the court.
+     </p>
+    </div>
+    <div class="flex flex-col md:flex-row">
+     <div class="md:w-2/3">
+      <h3 class="text-xl font-bold">
+       rules of the game
+      </h3>
+      <p>
+       In badminton, players score points by striking the shuttlecock with their racquet so that it passes over the net and lands in their opponents' half of the court. A rally ends once the shuttlecock has struck the ground. The first player or team to reach 21 points wins the game.
+      </p>
+      <h3 class="text-xl font-bold mt-4">
+       Tips
+      </h3>
+      <p>
+       To excel in badminton, focus on footwork, practice your serves, improve your reflexes, and develop a strong smash. Consistent practice and strategic play are key to success.
+      </p>
+      <h3 class="text-xl font-bold mt-4">
+       Accessories
+      </h3>
+      <p>
+       Badminton accessories include racquets, shuttlecocks, grip tape, wristbands, and proper footwear. These accessories help improve performance and ensure safety during play.
+      </p>
+     </div>
+     <div class="md:w-1/3 md:pl-4 mt-4 md:mt-0">
+      <h3 class="text-xl font-bold">
+       Highlights
+      </h3>
+      <img alt="Badminton player in action" class="mt-2" height="200" src="https://storage.googleapis.com/a1aa/image/Gmpb3FIyaNPAPzxt6dt5_U8HoD7_MaHtg8ZmmxIxZRA.jpg" width="300"/>
+      <p class="mt-2">
+       TOP BADMINTON MATCH HIGHLIGHTS
+      </p>
+     </div>
+    </div>
+   </div>
+   <div id="chess-content" style="display: none;">
+    <div class="text-left mb-4">
+     <h2 class="text-2xl font-bold">
+      Chess
+     </h2>
+     <p>
+      Chess is a strategic board game played between two players. The objective is to checkmate the opponent's king by placing it under an inescapable threat of capture.
+     </p>
+    </div>
+    <div class="flex flex-col md:flex-row">
+     <div class="md:w-2/3">
+      <h3 class="text-xl font-bold">
+       rules of the game
+      </h3>
+      <p>
+       In chess, each player starts with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. The game is played on an 8x8 grid. The objective is to checkmate the opponent's king.
+      </p>
+      <h3 class="text-xl font-bold mt-4">
+       Tips
+      </h3>
+      <p>
+       To excel in chess, study openings, practice tactics, understand endgames, and analyze your games. Consistent practice and strategic thinking are essential.
+      </p>
+      <h3 class="text-xl font-bold mt-4">
+       Accessories
+      </h3>
+      <p>
+       Chess accessories include chess boards, pieces, clocks, and notation books. These accessories help improve the playing experience and facilitate learning.
+      </p>
+     </div>
+     <div class="md:w-1/3 md:pl-4 mt-4 md:mt-0">
+      <h3 class="text-xl font-bold">
+       Highlights
+      </h3>
+      <img alt="Chess game in progress" class="mt-2" height="200" src="https://storage.googleapis.com/a1aa/image/7y_ZSh3LDmCabmfubUcc00tlZkUUpR-QcyuNHo910eo.jpg" width="300"/>
+      <p class="mt-2">
+       TOP CHESS MATCH HIGHLIGHTS
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+                
